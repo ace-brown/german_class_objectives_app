@@ -1,0 +1,36 @@
+.input-form {
+  height: 15rem;
+  margin: 3rem auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 5px 15px 5px #ad9d9d;
+  box-shadow: 4px 5px 15px 5px #b3a8a8;
+}
+
+@media (min-width: 1000px) {
+  .input-form {
+    flex-direction: row;
+    width: 60%;
+  }
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#objective-input {
+  padding: 1rem;
+  width: 20rem;
+}

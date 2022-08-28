@@ -1,0 +1,34 @@
+.task-item {
+  position: relative;
+  width: 60%;
+  background-color: rgb(32, 174, 218);
+  color: white;
+  margin: 0 auto 1.25rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.task-item::before,
+.task-item::after {
+  display: block;
+  content: "";
+  width: 2em;
+  height: 2.75px;
+  background: rgb(211, 30, 30);
+  transition: all ease-in-out 250ms;
+  cursor: pointer;
+}
+
+.task-item::before {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  transform: rotate(-45deg);
+}
+
+.task-item::after {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  transform: rotate(45deg);
+}
