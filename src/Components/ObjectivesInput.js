@@ -11,6 +11,9 @@ const ObjectivesInput = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+    if (enteredValue.trim().length === 0) {
+      return;
+    }
     props.onAddObjective(enteredValue);
   };
 
