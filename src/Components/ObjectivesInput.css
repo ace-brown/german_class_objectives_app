@@ -34,3 +34,12 @@
   padding: 1rem;
   width: 20rem;
 }
+
+.form-control.invalid label {
+  color: rgb(205, 70, 217);
+}
+
+.form-control.invalid input {
+  border-color: rgb(15, 58, 166);
+  background-color: rgb(217, 70, 70);
+}
