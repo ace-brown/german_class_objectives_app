@@ -1,4 +1,4 @@
-import "./ObjectivesItem.css";
+import styles from "./ObjectivesItem.module.css";
 
 const ObjectivesItem = (props) => {
   const deleteHandler = () => {
@@ -6,7 +6,7 @@ const ObjectivesItem = (props) => {
   };
 
   return (
-    <li onClick={deleteHandler} className="task-item">
+    <li onClick={deleteHandler} className={styles["task-item"]}>
       {props.children}
     </li>
   );

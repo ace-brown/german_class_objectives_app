@@ -1,4 +1,4 @@
-import "./ObjectivesInput.css";
+import styles from "./ObjectivesInput.module.css";
 import { useState } from "react";
 import Button from "./Button";
 
@@ -24,12 +24,14 @@ const ObjectivesInput = (props) => {
   };
 
   return (
-    <form onSubmit={formSubmitHandler} className="input-form">
-      <div className={`form-control ${!isValid ? "invalid" : ""}`}>
+    <form onSubmit={formSubmitHandler} className={styles["input-form"]}>
+      <div
+        className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
+      >
         <label>Objective</label>
         <input
           type="text"
-          id="objective-input"
+          className={styles["objective-input"]}
           placeholder="Write somthing..."
           onChange={objectiveInputChangeHandler}
         ></input>

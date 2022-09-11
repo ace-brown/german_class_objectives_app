@@ -1,9 +1,9 @@
-import "./ObjectivesList.css";
+import styles from "./ObjectivesList.module.css";
 import ObjectivesItem from "./ObjectivesItem";
 
 const ObjectivesList = (props) => {
   return (
-    <ul className="objective-list">
+    <ul className={styles["objective-list"]}>
       {props.items.map((objective) => (
         <ObjectivesItem
           key={objective.id}
